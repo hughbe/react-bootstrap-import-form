@@ -1,0 +1,35 @@
+{
+  "name": "react-bootstrap-import-form",
+  "version": "1.0.0",
+  "description": "An import form React component styled with Bootstrap 4.",
+  "main": "./build/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hughbe/react-bootstrap-import-form.git"
+  },
+  "keywords": [
+    "react",
+    "bootstrap",
+    "import form"
+  ],
+  "author": "Hugh Bellamy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hughbe/react-bootstrap-import-form/issues"
+  },
+  "homepage": "https://github.com/hughbe/react-bootstrap-import-form#readme",
+  "dependencies": {
+    "babel-polyfill": "^6.23.0",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1"
+  },
+  "scripts": {
+    "build": "babel lib --presets env,react --plugins=transform-class-properties --out-dir build",
+    "prepublish": "npm run build"
+  }
+}
